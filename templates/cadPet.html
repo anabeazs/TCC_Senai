@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>cadastre seu pet</title>
+
+</head>
+
+<body>
+
+    <!-- container a esquerda -->
+    <div class="container">
+        <div class="form_image">
+            <div class="animais">
+                <img src="">
+            </div>
+        </div>
+    </div>
+
+<div class="formPage">
+    <form action="processar_cad" method="POST">
+        <div class="input-grupo"> 
+
+            <h1> Cadastro do pet </h1>
+
+            <div class="input-box">
+                <label for="raca"> Raça: </label>
+                <input type="text" name="raca" id="raca">
+            </div>
+
+            <div class="input-box">
+                <label for="especie"> Espécie: </label>
+                <input type="text" name="especie" id="especie">
+            </div>
+
+            <div class="input-box">            
+                <label for="nome"> Nome: </label>
+                <input type="text" name="nome" id="nome">
+            </div>
+
+            <div class="input-box">
+                <label for="idade"> Idade do pet: </label>
+                <input type="text" name="idade" id="idade">
+            </div>
+
+            <div class="input-box">
+                <label for="anuncio"> Anunciante: </label>
+                <input type="text" name="anuncio" id="anuncio>
+            </div>
+
+            <div class="input-genero">
+                <input type="radio" id="macho" name="genero" value="macho" required>
+                <label for="macho">Macho</label>
+
+                <input type="radio" id="femea" name="genero" value="femea" required>
+                <label for="femea">Fêmea</label><br><br>
+            </div>
+
+            <!-- campo de descrição do animal -->
+            
+            <label for="descricao"> Descrição: </label>
+            <textarea name="descricao" id="descricao" cols="50" rows="8"></textarea>
+
+            <div class="botao_enviar">
+                <button type="submit"> Enviar </button>
+            </div>
+        </div>    
+    </form>
+</div>
+
+</body>
+</html>
