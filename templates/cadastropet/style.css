@@ -18,11 +18,11 @@ body {
     width: 80%;
     height: 80vh;
     display: flex;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.212);
+    box-shadow: 6px 6px 11px rgba(0, 0, 0, 0.212);
     
 }
 
-.form-img {
+.form-image {
     width: 50%;
     display: flex;
     justify-content: center;
@@ -30,7 +30,7 @@ body {
     padding: 1rem;
     border-radius: 30px;
 }
-img{
+.form-image img{
     height: 112%;
     width: 111%;
     display: flex;
@@ -46,36 +46,17 @@ img{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-     background-color: #F7B1AB;
+    background-color: #F7B1AB;
     padding: 5rem;
 
     border-radius: 10px;
 }
 
 .form-header {
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
     display: flex;
     justify-content: space-between;
 }
-
-.login-button button {
-    border: none;
-    background-color: #6c63ff;
-    padding: 0.4rem 1rem;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.login-button button:hover {
-    background-color: #6b63fff1;
-}
-
-.login-button button a {
-    text-decoration: none;
-    font-weight: 500;
-    color: #fff;
-}
-
 .form-header h1::after {
     content: '';
     display: block;
@@ -139,16 +120,24 @@ img{
 .enviavolta{
       width: 100%;
       margin-top: 1.5rem;
+      justify-content: space-between;
+    
 }
  button{
+    justify-content: space-between;
     padding: 0.33rem;
     padding-right: 0.33rem;
     width: 25%;
     margin-right: 90px;
     border-radius: 6px;
     border-color: #df9089;
-    
-    
-    
+    align-items: center;
+    background-color: #ffffff;
+    cursor: pointer;
+    color: #000000;
+   
+ }
+ #txtbutao{
+    color: #ffffff;
  }
  
