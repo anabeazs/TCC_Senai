@@ -19,6 +19,7 @@ body {
     height: 80vh;
     display: flex;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.212);
+    
 }
 
 .form-img {
@@ -27,6 +28,7 @@ body {
     justify-content: center;
     align-items: center;
     padding: 1rem;
+    border-radius: 30px;
 }
 img{
     height: 112%;
@@ -35,6 +37,7 @@ img{
     justify-content: center;
     align-items: center;
     padding: 1rem;
+    border-radius: 30px;
 }
 
 .formulariocadastro {
@@ -45,6 +48,8 @@ img{
     align-items: center;
      background-color: #F7B1AB;
     padding: 5rem;
+
+    border-radius: 10px;
 }
 
 .form-header {
@@ -147,10 +152,3 @@ img{
     
  }
  
-
-
-
-
-
-
-
