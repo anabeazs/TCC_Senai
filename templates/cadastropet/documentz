@@ -1,0 +1,12 @@
+/*
+1-priemira "div" containerformulario  e referente a imagens do pts do lado esquerdo
+então no ccs #containerformulario é que esta estilisando essa parte!
+
+2- segunda div "formulariocadastro" é todo cointener do formulario com os inputs e butões 
+ 
+obs: as fuctin"#" esta com restg pq não tem nunha função ainda no formulario, mais quando tiver é so substituir quando precisae para o backend 
+
+3- terceira div "inputformulario" é para movimentar os campos llebel input do formulario em um padrão só para eles se movimentar juntos
+
+e o input-form meche com os inpust tambem 
+*/
