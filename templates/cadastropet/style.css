@@ -66,6 +66,7 @@ body {
     margin: 0 auto;
     position: absolute;
     border-radius: 10px;
+    /*linha abaixo do h1*/
 }
 
 .inputformulario{
@@ -89,7 +90,9 @@ body {
     border: none;
     border-radius: 10px;
     box-shadow: 1px 1px 6px #0000001c;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
+    font-style: normal;
+    
 }
 
 .input-form input:hover {
@@ -100,14 +103,7 @@ body {
     outline: 3px solid  #df9089;
 }
 
-.input-form label,
-.gender-title h6 {
-    color: #000000c0;
-}
 .sexo{
-
-    
-
      width: 25%;
      margin-right: 90px;
      border-radius: 6px;
@@ -135,9 +131,35 @@ body {
     background-color: #ffffff;
     cursor: pointer;
     color: #000000;
-   
+    margin-top: 30px;
  }
- #txtbutao{
-    color: #ffffff;
+ .enviavolta button a{
+    text-decoration: none;
+    font-weight: 500px; color: #000000;
+    font-size: 14
+    px;
+    font-family: sans-serif;
+ }
+
+ .conteiner-genero{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.50rem;
+    align-items: center;
+    
+ }
+ .conteiner-tamanho{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.50rem;
+    padding: 0.5-rem;
+    align-items: center;
+    
+ }
+
+ .lebel-genero{
+    align-items: center;
+
+    
  }
  
