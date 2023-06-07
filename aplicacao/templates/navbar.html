@@ -1,0 +1,27 @@
+<nav class="navbar">
+    <a href="#" class="logo">
+        <img src="" alt="" >
+    </a>
+    <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </div>
+    <ul class="links" type="none">
+        <a href="{{url_for('home')}}">
+            <li class="link">Home</li>
+        </a>
+        <a href="#">
+            <li class="link">Sobre nós</li>
+        </a>
+        <a href="{{url_for('adocao')}}">
+            <li class="link">Adoção</li>
+        </a>
+        <a href="#">
+            <li class="link contact">Encontrar</li>
+        </a>
+        <a href="{{url_for('encontrados')}}">
+            <li class="link contact">Adotados</li>
+        </a>
+    </ul>
+</nav>

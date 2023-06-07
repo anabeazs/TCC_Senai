@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% block body %}
+        <section class="container">
+            <div class="home">
+                <div class="left">
+                    <h2 class="title">
+                        Adoção <br> de pets
+                    </h2>
+                    <p class="highlight">
+                        adoção de pets
+                    </p>
+                    <p class="description">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                    </p>
+                    <div class="btn-box">
+                        <button><a href="{{url_for('login')}}">Login</a></button>
+                        <button><a href="{{url_for('cadastrar_usuario')}}">Cadastro</a></button>
+                    </div>
+                </div>
+                <div class="right">
+                    <img src="./static/home/5900_10_02.jpg" alt="">
+                </div>
+            </div>
+        </section>
+{% endblock %}
