@@ -4,27 +4,25 @@
         <form method="post" class="formLogin">
             <h1> Cadastro</h1>
             <p>Informe seus dados e junte-se ao nosso time animal</p>
-            <div class="usuario">
-                {{ form.usuario.label(class="FormLogin") }}
-                {{ form.usuario(class="form-control") }}
-            </div>
-            <div class="email">
-                {{ form.email.label(class="FormLogin") }}
-                {{ form.email(class="form-control") }}
-            </div>
-            <div class="password">
-                {{ form.senha.label(class="FormLogin") }}
-                {{ form.senha(class="form-control") }}
-            </div>
-            <div class="password">
-                {{ form.confirmacao.label(class="FormLogin") }}
-                {{ form.confirmacao(class="form-control") }}
-            </div>
-            <div>
-                <div class="col-sm" style="text-align: right;">
-                    {{ form.submit_criar(class="btn") }}
-                </div>
-            </div>
+
+            <!-- Nome -->
+            {{ form.usuario.label(class="FormLogin") }}
+            {{ form.usuario(class="form-control",placeholder="Digite seu nome") }}
+
+            <!-- Email -->
+            {{ form.email.label(class="FormLogin") }}
+            {{ form.email(class="form-control",placeholder="Digite seu e-mail") }}
+
+            <!-- Senha -->
+            {{ form.senha.label(class="FormLogin") }}
+            {{ form.senha(class="form-control",placeholder="Digite sua senha") }}
+
+            <!-- Confirmação de senha -->
+            {{ form.confirmacao.label(class="FormLogin") }}
+            {{ form.confirmacao(class="form-control",placeholder="Confirme sua senha") }}
+
+            <!-- Botão -->
+            {{ form.submit_criar(class="btn") }}
         </form>
     </div>    
 {% endblock %}
