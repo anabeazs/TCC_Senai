@@ -8,35 +8,26 @@
             <div id="social_media">
                 <!-- FACEBOOK -->
                 <a href="#">
-                    <img src="static/facefofo.png" alt="">
+                    <img src="static/login/facefofo.png" alt="">
                 </a>
 
                 <!-- GOOGLE -->
                 <a href="#">
-                    <img src="static/googlofofo.png" alt="Google logo">
+                    <img src="static/login/googlofofo.png" alt="Google logo">
                 </a>
             </div>
-            <div class="email">
-                {{ form.email.label(class="FormLogin") }}
-                {{ form.email(class="form-control") }}
-            </div>
-            <div class="password">
-                {{ form.senha.label(class="email") }}
-                {{ form.senha(class="form-control") }}
-            </div>
 
-            <div>
-                <div class="col-sm" style="text-align: right;">
-                    {{ form.submit_entrar(class="btn") }}
-                </div>
-            </div>
+            <!-- Login -->
+            {{ form.email.label(class="FormLogin") }}
+            {{ form.email(class="form-control",placeholder="Digite seu e-mail") }}
 
+            <!-- Senha -->
+            {{ form.senha.label(class="email") }}
+            {{ form.senha(class="form-control",placeholder="Digite sua senha") }}
 
-<!--            <label for="email"> E-mail </label>-->
-<!--            <input type="email" placeholder="Digite seu e-mail" autofocus="true"/>-->
-<!--            <label for="password">Senha</label>-->
-<!--            <input type="password" placeholder="Digite sua senha"/>-->
-<!--            <input type="submit" value="Acessar" class="btn">-->
+            <!-- Botão -->
+            {{ form.submit_entrar(class="btn") }}
+
             <br>
             <a href="{{url_for('cadastrar_usuario')}}">Não tem conta? Cadastre-se</a>
         </form>
