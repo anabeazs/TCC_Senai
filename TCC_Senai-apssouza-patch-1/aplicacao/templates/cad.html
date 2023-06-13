@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block body %}
+    <div class="page">
+        <form method="post" class="formLogin">
+            <h1> Cadastro</h1>
+            <p>Informe seus dados e junte-se ao nosso time animal</p>
+
+            <!-- Nome -->
+            {{ form.usuario.label(class="FormLogin") }}
+            {{ form.usuario(class="form-control",placeholder="Digite seu nome") }}
+
+            <!-- Email -->
+            {{ form.email.label(class="FormLogin") }}
+            {{ form.email(class="form-control",placeholder="Digite seu e-mail") }}
+
+            <!-- Senha -->
+            {{ form.senha.label(class="FormLogin") }}
+            {{ form.senha(class="form-control",placeholder="Digite sua senha") }}
+
+            <!-- Confirmação de senha -->
+            {{ form.confirmacao.label(class="FormLogin") }}
+            {{ form.confirmacao(class="form-control",placeholder="Confirme sua senha") }}
+
+            <!-- Botão -->
+            {{ form.submit_criar(class="btn") }}
+        </form>
+    </div>    
+{% endblock %}
