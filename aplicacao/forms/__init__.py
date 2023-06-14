@@ -5,9 +5,9 @@ from wtforms.validators import DataRequired, length, email, equal_to
 
 class FormLogin(FlaskForm):
     #validators recebe uma lista de validadores
-    email = StringField('Email', validators=[DataRequired(),email()])
+    usuario = StringField('Usuário', validators=[DataRequired(),length(5,12)])
     senha = PasswordField('Senha', validators=[DataRequired(),length(6,18)])
-    submit_entrar = SubmitField('Acessar')
+    submit_entrar = SubmitField('Entrar')
 
 class FormCadastrarUsuario(FlaskForm):
     usuario = StringField('Nome do usuário', validators=[DataRequired(),length(5,12)])

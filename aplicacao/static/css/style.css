@@ -8,12 +8,117 @@
     font-family: 'Raleway', sans-serif;
 }
 
-.container{
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+main{
+    height: 95vh;
+    width: 100%;
+    background-image: linear-gradient(45deg);
+}
+
+
+
+/* onda rosa */
+
+.custom-shape-divider-bottom-1686140736 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+    
+}
+
+.custom-shape-divider-bottom-1686140736 svg {
+    position: relative;
+    display: block;
+    width: calc(179% + 1.3px);
+    height: 194px;
+    transform: rotateY(180deg);
+    animation: ondaAnimada 5s ease-in-out infinite alternate;
+}
+
+.custom-shape-divider-bottom-1686140736 .shape-fill {
+    fill: #F7B1AB;
+}
+
+
+@keyframes ondaAnimada {
+    0%{
+        transform: translateY(0px);
+    }
+    100%{
+        transform: translateY(10px);
+    }
+}
+
+#onda1{
+    z-index: 1000;
+    background-position-x: 500;
+}
+
+#onda2{
+    z-index: 999;
+    background-position-x: 400px;
+}
+#onda3{
+    z-index: 998;
+    background-position-x: 300px;
+}
+
+
+/* onda cinza */
+
+.custom-shape-divider-bottom-1686141920 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1686141920 svg {
+    position: relative;
+    display: block;
+    width: calc(200% + 1.3px);
+    height: 272px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1686141920 .shape-fill {
+    fill: #F0F0F0;
+}
+
+
+/* .logo{
+    font-size: 30px;
+    font-weight: 500;
+    font-family: 'DM Serif Display', serif;
+    color: #F7B1AB;
+    text-decoration: none;
+} */
+
+ .container{
     width: 100%;
     height: 100vh;
     position: relative;
     background-color: #eee;
 }
+
+.container2{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-color: #F7B1AB;
+}
+
 a{
     text-decoration: none;
     color: inherit;
@@ -33,7 +138,7 @@ a{
     width: 25px;
     height: 3px;
     margin:5px auto;
-    background-color: black;
+    background-color:gray;
     transition: all 0.3s linear;
 }
 .hamburger{
@@ -83,15 +188,42 @@ a{
 }
 
 .right{
-    width: 550px;
+    width: 500px;
 }
 
 .right img{
     width: 100%;
     border-radius: 300px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+
+.right2{
+    width: 550px;
+}
+
+.right2 img{
+    margin-left: 50px;
+    width: 100%;
+    border-radius: 300px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .home{
+    width: 1000px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 1;
+}
+
+.home2{
     width: 1000px;
     margin: auto;
     display: flex;
@@ -109,6 +241,10 @@ a{
     width: 350px;
 }
 
+.left2{
+    width: 350px;
+}
+
 .title, .highlight{
     font-family: 'DM Serif Display', serif;
 }
@@ -118,6 +254,18 @@ a{
     font-size: 80px;
     line-height: 64px;
     margin-bottom: 30px;
+}
+
+
+.title2{
+    font-family: 'DM Serif Display', serif;
+}
+
+.title2{
+    color: #eee;
+    font-size: 80px;
+    line-height: 64px;
+    margin-bottom: 20px;
 }
 
 .highlight{
@@ -138,6 +286,13 @@ a{
     margin-bottom: 20px;
 }
 
+.description2{
+    font-size: 13px;
+    line-height: 24px;
+    font-weight: 600;
+    margin-bottom: 70px;
+}
+
 .btn-box button{
     background-color: #F7B1AB;
     border: 2px solid #F7B1AB;
@@ -147,6 +302,7 @@ a{
     padding: 10px 20px;
     cursor: pointer;
     transition: all 0.3s linear;
+    margin-bottom: 30px;
 }
 
 .btn-box button:last-child{
@@ -236,319 +392,4 @@ a{
         margin-bottom: 15px;
     }
 
-}
-
-/* Cadastro Pet */
-/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
-
-body{
-    font-family: 'Montserrat', sans-serif;
-    padding: 0;
-    margin: 0;
-    color: #000;
-    background-color: #FAE8E8;
-}
-*/
-
-.formPage{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-content: center;
-    justify-content:center;
-    background-color: blanchedalmond;
-
-}
-
-input{
-    border-radius: 20px;
-
-}
-
-/* Tela adotados/encontrados */
-/* * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Quicksand', sans-serif;
-
-}
-
-body {
-    background: #FAE8E8;
-    height: 100vh;
-    width: 100%;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    color: #000000;
-
-    font-size: 20px;
-}
-*/
-
-main{
-    background: #F9E48D;
-    border-radius: 25px 25px 25px 25px;
-}
-
-main.cards {
-    display: flex;
-    padding: 32px;
-}
-
-main.cards section.card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    background: white;
-    padding: 1rem 1.5rem;
-    border-radius: 8px;
-    max-height: 468px;
-    margin-left: 32px;
-}
-
-main.cards section.card:first-child {
-    margin-left: 0;
-}
-
-main.cards section.card .icon {
-    width: 100%;
-    height: 100%;
-}
-
-main.cards section.card img {
-    width: 100%;
-}
-
-main.cards section.card h2 {
-    font-size: 100%;
-    margin: 16px 0;
-}
-
-main.cards section.card span {
-    font-weight: 300;
-    max-width: 240px;
-    font-size: 80%;
-    margin-bottom: 16px;
-}
-
-main.cards section.card button {
-    padding: 0.5rem 1rem;
-    text-transform: uppercase;
-    border-radius: 32px;
-    border: 0;
-    cursor: pointer;
-    font-size: 80%;
-    font-weight: 500;
-    color: #fff;
-    margin-bottom: 16px 0;
-}
-
-#button1{
-    font-size: 13px;
-    transition: 0.2s;
-}
-
-
-#button2{
-    font-size: 13px;
-    transition: 0.2s;
-}
-
-button:hover{
-
-    transform: translateY(-10%);
-    transition: 0.2s;
-}
-main.cards section.card.contact button {
-    background: linear-gradient(to right, #756197, #DFCBFF);
-    }
-main.cards section.card.shop button {
-    background: linear-gradient(to right, #756197, #DFCBFF);
-    }
-main.cards section.card.about button {
-    background: linear-gradient(to right, #756197, #756197);
-    }
-
-main.cards section.card.contact {
-    box-shadow: 20px 20px 50px -30px  #a74a25;
-    }
-main.cards section.card.shop {
-    box-shadow: 20px 20px 50px -30px #a74a25;
-    }
-main.cards section.card.about {
-    box-shadow: 20px 20px 50px -30px  #a74a25;
-    }
-
-@media screen and (max-width: 720px) {
-    main.cards {
-        flex-direction: column;
-    }
-
-    main.cards section.card {
-        margin-left: 0;
-        margin-bottom: 32px;
-    }
-
-    main.cards section.card:last-child {
-        margin-bottom: 0;
-    }
-
-    main.cards section.card button {
-        font-size: 70%;
-    }
-
-}
-
-/* Login e cadastro de usuário
-/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap'); */
-/* @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Raleway:wght@400;500;600&display=swap');
-
-body{
-    font-family: 'Raleway', sans-serif;
-    padding: 0;
-    margin: 0;
-    color: #eee;
-    background-color: #eee;
-} */
-
-.page{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-    width: 100%;
-    height: 100vh;
-
-}
-
-/* Login */
-.formLogin{
-    display: flex;
-    flex-direction: column;
-    background-color: #F7B1AB;
-    border-radius: 7px;
-    padding: 40px;
-    box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.4);
-    gap: 1px;
-}
-
-.formLogin h1{
-    padding: 0;
-    margin: 0;
-    font-weight: 1000;
-    font-size: 4em;
-    font-family: 'DM Serif Display', serif;
-    color: #F9E48D;
-    text-align: center;
-}
-
-.formLogin p {
-    display: flex;
-    font-size: 14px;
-    font-weight: 600;
-    color: #eee;
-    margin-bottom: 25px;
-    text-align: center;
-}
-
-.formLogin input {
-    padding: 15px;
-    font-size: 14px;
-    border: 1px solid #ccc;
-    margin-bottom: 20px;
-    margin-top: 5px;
-    border-radius: 30px;
-    transition: all linear 160ms;
-    outline: none;
-}
-
-
-.formLogin input:focus {
-    border: 1px solid #aac2fd;
-}
-
-.formLogin label {
-    font-size: 15px;
-    font-weight: 600;
-}
-
-.formLogin a {
-    display: inline-block;
-    margin-bottom: 20px;
-    font-size: 13px;
-    color: #555;
-    transition: all linear 160ms;
-}
-
-.formLogin a:hover {
-    color: #e6edff;
-}
-
-a{
-    text-align: center;
-}
-/* botão */
-.btn {
-    background-color: #e6edff;
-    color: #fff;
-    font-size: 14px;
-    font-weight: 600;
-    border: none !important;
-    transition: all linear 160ms;
-    cursor: pointer;
-    margin: 0 !important;
-
-}
-
-.btn:hover {
-    transform: scale(1.05);
-    background-color: #aac2fd;
-
-}
-
-/* Redes sociais */
-#social_media {
-    display: flex;
-    justify-content: space-evenly;
-}
-
-#social_media img {
-    width: 35px;
-}
-
-#social_media img:hover {
-    transform: scale(1.2);
-}
-
-/* Cadastrar animal */
-.containerformulario {
-    width: 80%;
-    height: 80vh;
-    display: flex;
-    box-shadow: 6px 6px 11px rgba(0, 0, 0, 0.212);
-
-}
-
-.form-image {
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem;
-    border-radius: 30px;
-}
-.form-image img{
-    height: 112%;
-    width: 111%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem;
-    border-radius: 30px;
-}
+} 
