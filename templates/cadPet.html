@@ -1,75 +1,49 @@
 {% extends 'base.html' %}
 {% block body %}
-    <div class="formulariocadastro">
-            <form action="#">
-                <div class="form-header">
-                    <div class="title">
-                        <h1>Cadastre-se Pet</h1>
-                    </div>
+         <form method="post" class="formPet">
 
-                </div>
+            <div class="title_pet">
+                <h1>Cadastro Pet</h1>
+            </div>
 
-                <div class="inputformulario">
-                    <div class="input-form">
-                        <label for="nome">Nome do responsável</label>
-                        <input id="nome" type="text" name="nome" placeholder="Digite seu nome" required>
-                    </div>
-
-                        <div class="input-form">
-                            <label for="raca">Raça</label>
-                            <input id="raca" type="text" name="raca" placeholder="Digite a raça do seu pet" required>
-                        </div>
-
-                            <div class="input-form">
-                                <label for="data">Nascimento do pet</label>
-                                <input type="date" name="data" id="data" required>
-                            </div>
-
-                            <div class="input-form">
-                                <label for="raca">Nome Do Pet</label>
-                                <input id="raca" type="text" name="pet" placeholder="Digite o Nome do seu pet" required>
-                            </div>
-
-                </div>
-
-                <div class="conteiner-genero">
-                    <div class="">
-                        Gênero
-                    </div>
-                    <div class="lebel-genero">
-                        <input type="radio" id="" name="sexo">
-                        <label for="" class="">Fêmea</label>
-                     </div>
-                        <div class="lebel-genero">
-                         <input type="radio" id="" name="sexo">
-                         <label for="" class="">Macho</label>
-                       </div>
-                </div>
-
-                <div class="conteiner-tamanho">
-                    <div class="txttamanho">
-                      Tamanho
-                    </div>
-                    <div class="">
-                      <input type="radio" id="" name="tamanho">
-                      <label for="" class="">Pequeno</label>
-                    </div>
-                      <div class="">
-                       <input type="radio" id="" name="tamanho">
-                       <label for="" class="">Médio</label>
-                     </div>
-                     <div class="">
-                        <input type="radio" id="" name="tamanho">
-                        <label for="" class="">Grande</label>
-                      </div>
-                 </div>
+            <label for="nome">Nome do responsável</label>
+            <input id="nome" type="text" name="nome" placeholder="Digite seu nome" required>
 
 
+            <label for="raca">Raça</label>
+            <input id="raca" type="text" name="raca" placeholder="Digite a raça do seu pet" required>
 
-                <div class="enviavolta">
-                    <button ><a >Envia</a> </button>
-                    <button ><a >Voltar</a> </button>
-                </div>
-            </form>
-        </div>
+            <label for="data">Nascimento do pet</label>
+            <input type="date" name="data" id="data" required>
+
+            <label for="raca">Nome Do Pet</label>
+            <input id="raca" type="text" name="pet" placeholder="Digite o Nome do seu pet" required>
+
+            <div class="container_pet">
+
+                <div class="genero">
+                    <h3>Gênero</h3>
+                    <label for="" class="">Fêmea</label>
+                    <input type="radio" id="" name="sexo">
+                    <label for="" class="">Macho</label>
+                    <input type="radio" id="" name="sexo">
+                  </div>
+
+
+                  <div class="tamanho">
+                    <h3>Tamanho</h3>
+                    <label for="" class="">Pequeno</label>
+                    <input type="radio" id="radioInput" name="tamanho">
+                    <label for="" class="">Grande</label>
+                    <input type="radio" id="radioInput" name="tamanho">
+                    <!-- <label for="" class="">Médio</label>
+                    <input type="radio" id="" name="tamanho"> -->
+                  </div>
+            </div>
+
+            <div class="enviar">
+                <input type="submit" value="Acessar" class="btn">
+            </div>
+         </form>
+
 {% endblock %}
