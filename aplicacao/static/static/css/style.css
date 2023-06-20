@@ -630,7 +630,6 @@ input{
 
 }
 
-
 /* Tela adotados/encontrados */
 /* * {
     margin: 0;
@@ -694,7 +693,6 @@ main.cards section.card img {
 main.cards section.card h2 {
     font-size: 100%;
     margin: 16px 0;
-    color: #2f2e2e;
 }
 
 main.cards section.card span {
@@ -702,7 +700,6 @@ main.cards section.card span {
     max-width: 240px;
     font-size: 80%;
     margin-bottom: 16px;
-    color: #2f2e2e;
 }
 
 main.cards section.card button {
