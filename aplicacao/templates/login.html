@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% block body %}
+    <div class="page">
+        <form method="post" class="formLogin" action="{{ url_for('login')}}">
+            {{ form.csrf_token }}
+            <h1> Login </h1>
+            <p>             Já tem conta? Faça login! Ou entre com o Google</p>
+            <div id="social_media">
+                <!-- FACEBOOK -->
+                <a href="#">
+                    <img src="static/login/facefofo.png" alt="">
+                </a>
+
+                <!-- GOOGLE -->
+                <a href="#">
+                    <img src="static/login/googlofofo.png" alt="Google logo">
+                </a>
+            </div>
+
+            <!-- Login -->
+            {{ form.email.label(class="FormLogin") }}
+            {{ form.email(class="form-control",placeholder="Digite seu e-mail") }}
+
+            <!-- Senha -->
+            {{ form.senha.label(class="email") }}
+            {{ form.senha(class="form-control",placeholder="Digite sua senha") }}
+
+            <!-- Botão -->
+            {{ form.submit_entrar(class="btn") }}
+
+            <br>
+            <a href="{{url_for('cadastrar_usuario')}}">Não tem conta? Cadastre-se</a>
+        </form>
+        <div class="img-gatinho">
+            <img src="" alt="">
+        </div>
+    </div>
+{% endblock %}

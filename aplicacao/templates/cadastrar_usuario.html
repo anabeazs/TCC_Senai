@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+    {% block body %}
+            <div class="login">
+                <h2>CADASTRO</h2>
+                <form method="POST" action="">
+                    {{ form.csrf_token }}
+                    <div style="text-align: center;">
+                        <h2 class="fw-bold mb-2 text-uppercase">Cadastro de Usuário</h2>
+                    </div>
+
+                    <div class="user">
+<!--                        Criando os inputs com o Python    -->
+                        {{form.usuario.label(class="form-label")}}
+                        {{form.usuario(class="form-control")}}
+                    </div>
+                    <div class="user">
+                        {{form.email.label(class="form-label")}}
+                        {{form.email(class="form-control")}}
+                    </div>
+                    <div class="password">
+                        {{form.senha.label(class="form-label")}}
+                        {{form.senha(class="form-control")}}
+                    </div>
+                    <div class="password">
+                        {{form.confirmacao.label(class="form-label")}}
+                        {{form.confirmacao(class="form-control")}}
+                    </div>
+
+                    <div>
+                        <div >
+<!--                            Criando o input com Python-->
+                            {{ form.submit_criar(class="btn btn-primary btn-block mb-4") }}
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+{% endblock %}

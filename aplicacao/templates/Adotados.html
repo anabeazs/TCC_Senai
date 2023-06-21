@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block body %}
+    <main class="cards">
+        <section class="card contact">
+            <div class="icon">
+                {% for animal in animais %}
+                    {{ animais.imagem }}
+                {% endfor %}
+            </div>
+            <h2>Animal Adotado</h2>
+            <span>Veja os animais perdidos.</span>
+            <button id="button1"><a href="perdido_achad.telas/perdido.html">Clique Aqui</a></button>
+        </section>
+    </main>
+{% endblock %}

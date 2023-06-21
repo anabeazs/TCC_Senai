@@ -1,0 +1,63 @@
+{% extends 'base.html' %}
+{% block body %}
+ <main>
+    <section class="container">
+        <div class="home">
+            <div class="left">
+                <h2 class="title">
+                    Adoção <br> de pets
+                </h2>
+                <p class="highlight">
+                    Junte-se a nós
+                </p>
+                <p class="description">
+                    Abra seu coração e encontre o amor de quatro patas - adote um amigo para toda a vida ou reencontre seu amigo perdido!
+                </p>
+                <div class="btn-box">
+                    <button><a href="{{url_for('login')}}">Login</a></button>
+                    <button><a href="{{url_for('cadastrar_usuario')}}">Cadastro</a></button>
+                </div>
+            </div>
+            <div class="right">
+                <img src="./static/home/cachorro_gato.jpg" alt="">
+            </div>
+        </div>
+        <div class="custom-shape-divider-bottom-1686140736">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path id="onda1" d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
+                <path id="onda2" d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
+                <path  id="onda3" d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
+            </svg>
+        </div>
+    </div>
+    </section>
+</main>
+    <section class="container2">
+        <div class="home2">
+        <div id="sobre">
+            <div class="left2">
+                <h2 class="title2">
+                    Quem<br> somos?
+                </h2>
+                <p class="description2">
+                    Somos um protejo que visa facilitar a adoção de animais abandonados e ajudar a localizaranimais perdidos , iniciamos nossa trajetória no universo dos Pets pensando no bem estar de diversos bichinhos que não possuem um lar para chamar de seu, e também, nas diversas famílias que buscam um animalzinho para cuidar e alegrar seus dias! 
+                    Dito isso, apresentamos à vocês a Adopets, que busca no voluntariado ajudar dezenas, centenas e até milhares de Pets a encontrarem um lar de amor e afeto.
+                </p>
+            </div>
+        </div>
+        <div class="right2">
+            <img src="./static/home/cachorro.jpg" alt="">
+        </div>
+        <div class="s-m">
+            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="1.5em" viewBox="0 0 384 512"><style>svg{fill:#f7f7f8}</style><path d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z"/></svg></i></a>
+        </div>
+    </div>
+    <div class="custom-shape-divider-bottom-1686141920">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path  d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
+            <path  d="M0,0V16.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
+            <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
+        </svg>
+    </div>
+</section>
+{% endblock %}

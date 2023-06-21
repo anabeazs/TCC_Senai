@@ -1,0 +1,64 @@
+/* cadastro de pet */
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Raleway:wght@400;500;600&display=swap');
+
+
+.formPet{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    flex-direction:column;
+    background-color: #F7B1AB;
+    border-radius: 7px;
+    box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.151);
+    gap: 1px;
+    width: 500px;
+    height: 600px;
+    margin-top: 60px
+}
+
+.title_pet h1{
+    font-family: 'DM Serif Display', serif;
+    color: #F9E48D;
+    font-size: 45px;
+}
+
+.formPet input{
+    width: 300px;
+    padding: 15px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    border-radius: 30px;
+    transition: all linear 160ms;
+    outline: none;
+}
+
+.container_pet {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .genero, .tamanho {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .genero h3, .tamanho h3 {
+    margin-bottom: 2px;
+    font-family: 'DM Serif Display', serif;
+    color: #F9E48D;
+  }
+
+  .genero input[type="radio"], .tamanho input[type="radio"] {
+    margin-right: 5px;
+    margin-bottom: 2px;
+  }
+
+

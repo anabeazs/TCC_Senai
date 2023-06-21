@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+{% block body %}
+    <div class="page">
+         <form method="post" class="formPet"">
+            {{ form.csrf_token }}
+            <div class="title_pet">
+                <h1>Cadastro Pet</h1>
+            </div>
+
+<!--            <label for="nome">Nome do responsável/ONG</label>-->
+            {{ form.usuario(class="cadastrar-pet",placeholder="Nome do responsável/ONG") }}
+<!--            <input id="nome" type="text" name="nome" placeholder="Digite seu nome" required>-->
+
+
+<!--            <label for="raca">Raça</label>-->
+<!--            <input id="raca" type="text" name="raca" placeholder="Digite a raça do seu pet" required>-->
+            {{ form.nome(class="cadastrar-pet",placeholder="Digite o nomde do pet (caso tenha)") }}
+
+            <div class="fotoPet">
+
+            </div>
+
+            <h3>Em qual das seguintes opções o Pet se encaixa?</h3>
+            {{ form.tipo(class="sexo") }}
+
+            <label for="data">Idade do pet</label>
+            {{ form.idade(class="sexo") }}
+<!--            <input type="date" name="data" id="data" required>-->
+
+            <div class="container_pet">
+
+                <div class="genero">
+                    <h3>Gênero</h3>
+                    {{ form.genero(class="sexo") }}
+<!--                    {{ form.genero }}-->
+
+<!--                    <label for="" class="">Fêmea</label>-->
+<!--                    <input type="radio" id="" name="sexo">-->
+<!--                    <label for="" class="">Macho</label>-->
+<!--                    <input type="radio" id="" name="sexo">-->
+                  </div>
+
+                  <div class="tamanho">
+                      <h3>Porte</h3>
+                      {{ form.porte }}
+
+                  </div>
+            </div>
+            {{ form.classificacao }}
+            <div class="enviar">
+                {{ form.submit(class="btn") }}
+            </div>
+         </form>
+    </div>
+{% endblock %}
