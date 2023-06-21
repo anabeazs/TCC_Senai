@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 {% block body %}
     <div class="page">
-         <form method="post" class="formPet" enctype="multipart/form-data">
+         <form method="post" class="formPet"">
             {{ form.csrf_token }}
             <div class="title_pet">
                 <h1>Cadastro Pet</h1>
@@ -23,18 +23,21 @@
             <h3>Em qual das seguintes opções o Pet se encaixa?</h3>
             {{ form.tipo(class="sexo") }}
 
-<!--            <label for="data">Idade do pet</label>-->
+            <label for="data">Idade do pet</label>
             {{ form.idade(class="sexo") }}
 <!--            <input type="date" name="data" id="data" required>-->
-
-<!--            {{ form.imagem.label }}-->
-            {{ form.imagem }}
 
             <div class="container_pet">
 
                 <div class="genero">
                     <h3>Gênero</h3>
                     {{ form.genero(class="sexo") }}
+<!--                    {{ form.genero }}-->
+
+<!--                    <label for="" class="">Fêmea</label>-->
+<!--                    <input type="radio" id="" name="sexo">-->
+<!--                    <label for="" class="">Macho</label>-->
+<!--                    <input type="radio" id="" name="sexo">-->
                   </div>
 
                   <div class="tamanho">

@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Raleway:wght@400;500;600&display=swap');
 
 
+
+
 *{
     margin: 0;
     padding: 0;
@@ -8,11 +10,13 @@
     font-family: 'Raleway', sans-serif;
 }
 
+
 body{
     margin: 0px;
     padding: 0px;
     background-color: #eee;
 }
+
 
 main{
     height: 95vh;
@@ -22,7 +26,11 @@ main{
 
 
 
+
+
+
 /* onda rosa */
+
 
 .custom-shape-divider-bottom-1686140736 {
     position: absolute;
@@ -32,8 +40,9 @@ main{
     overflow: hidden;
     line-height: 0;
     transform: rotate(180deg);
-    
+
 }
+
 
 .custom-shape-divider-bottom-1686140736 svg {
     position: relative;
@@ -44,9 +53,12 @@ main{
     animation: ondaAnimada 5s ease-in-out infinite alternate;
 }
 
+
 .custom-shape-divider-bottom-1686140736 .shape-fill {
     fill: #F7B1AB;
 }
+
+
 
 
 @keyframes ondaAnimada {
@@ -58,10 +70,12 @@ main{
     }
 }
 
+
 #onda1{
     z-index: 1000;
     background-position-x: 600;
 }
+
 
 #onda2{
     z-index: 999;
@@ -72,6 +86,7 @@ main{
     background-position-x: 300px;
 }
 
+
 /* Seta para voltar ao topo da página) */
 .s-m{
     position: absolute;
@@ -79,6 +94,8 @@ main{
     margin-left: 115%;
     transform: translate(-50%, -50%);
 }
+
+
 
 
 .s-m a{
@@ -94,12 +111,16 @@ main{
     transition: 20px;
 }
 
+
 .s-m a:hover{
     background: #fde080;
 }
 
 
+
+
 /* onda cinza */
+
 
 .custom-shape-divider-bottom-1686141920 {
     position: absolute;
@@ -111,6 +132,7 @@ main{
     transform: rotate(180deg);
 }
 
+
 .custom-shape-divider-bottom-1686141920 svg {
     position: relative;
     display: block;
@@ -119,9 +141,13 @@ main{
     transform: rotateY(180deg);
 }
 
+
 .custom-shape-divider-bottom-1686141920 .shape-fill {
     fill: #F0F0F0;
 }
+
+
+
 
 
 
@@ -132,6 +158,7 @@ main{
     background-color: #eee;
 }
 
+
 .container2{
     width: 100%;
     height: 100vh;
@@ -139,10 +166,12 @@ main{
     background-color: #F7B1AB;
 }
 
+
 a{
     text-decoration: none;
     color: inherit;
 }
+
 
 .logo {
     display: block;
@@ -152,8 +181,9 @@ a{
 }
 .logo img{
     height:200px;
-    width: 200px; 
+    width: 200px;
 }
+
 
 .navbar{
     width: 1000px;
@@ -163,6 +193,7 @@ a{
     justify-content: space-between;
     margin-left: 250px;
 }
+
 
 .bar{
     display: block;
@@ -177,6 +208,7 @@ a{
     display: none;
 }
 
+
 .links{
     display: flex;
     align-items: center;
@@ -184,9 +216,11 @@ a{
     z-index: 2;
 }
 
+
 .links a{
     margin-left: 12px;
 }
+
 
 .link{
     font-size: 15px;
@@ -197,14 +231,17 @@ a{
     color: #525252;
 }
 
+
 .link:hover{
     background-color:#F7B1AB ;
     color: white;
 }
 
+
 .links a:last-child{
     margin-left: 18px;
 }
+
 
 .contact{
     color: white;
@@ -213,14 +250,17 @@ a{
     border: 2px solid #F7B1AB;
 }
 
+
 .contact:hover{
     background-color: transparent;
     color:#F7B1AB
 }
 
+
 .right{
     width: 500px;
 }
+
 
 .right img{
     width: 100%;
@@ -230,9 +270,12 @@ a{
 }
 
 
+
+
 .right2{
     width: 550px;
 }
+
 
 .right2 img{
     margin-left: 50px;
@@ -240,6 +283,7 @@ a{
     border-radius: 300px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
+
 
 .home{
     width: 1000px;
@@ -255,6 +299,7 @@ a{
     z-index: 1;
 }
 
+
 .home2{
     width: 1000px;
     margin: auto;
@@ -269,30 +314,37 @@ a{
     z-index: 1;
 }
 
+
 .left{
     width: 350px;
 }
+
 
 .left2{
     width: 350px;
 }
 
+
 .title, .highlight{
     font-family: 'DM Serif Display', serif;
 }
+
 
 .title{
     color: #F7B1AB;
     font-size: 80px;
     line-height: 64px;
     margin-bottom: 25px;
-    
+
 }
+
+
 
 
 .title2{
     font-family: 'DM Serif Display', serif;
 }
+
 
 .title2{
     color: #eee;
@@ -300,6 +352,7 @@ a{
     line-height: 64px;
     margin-bottom: 20px;
 }
+
 
 .highlight{
     background-color: #e7e3d9;
@@ -312,13 +365,15 @@ a{
     margin-bottom: 35px;
 }
 
+
 .description{
     font-size: 13px;
     line-height: 24px;
     font-weight: 600;
     margin-bottom: 20px;
-    
+
 }
+
 
 .description2{
     font-size: 13px;
@@ -326,6 +381,7 @@ a{
     font-weight: 600;
     margin-bottom: 70px;
 }
+
 
 .btn-box button{
     background-color: #F7B1AB;
@@ -339,27 +395,33 @@ a{
     margin-bottom: 95px;
 }
 
+
 .btn-box button:last-child{
     background-color: transparent;
     color: #F7B1AB;
     margin-left: 3px;
 }
 
+
 .btn-box button:hover{
     transform: scale(1.04);
 }
+
 
 .links.active{
     height: 300px;
 }
 
+
 .hamburger.active .bar:nth-child(2){
     opacity: 0;
 }
 
+
 .hamburger.active .bar:nth-child(2){
     transform: translateY(-8px) rotate(-45deg);
 }
+
 
 @media screen and (max-width:1040px){
     .navbar{
@@ -369,7 +431,9 @@ a{
         padding-inline: 20px;
     }
 
+
 }
+
 
 @media screen and (max-width:1000px){
     .container{
@@ -414,6 +478,7 @@ a{
      }
 }
 
+
 @media screen and (max-width:620px){
     .container{
         height: 130vh;
@@ -426,7 +491,11 @@ a{
         margin-bottom: 15px;
     }
 
+
 }
+
+
+
 
 /* Footer */
 :root{
@@ -437,12 +506,17 @@ a{
 }
 
 
+
+
 footer{
     width: 100%;
-    height: 25px;
+    height: 20px;
     color: var(--color-neutral-40);
 
+
 }
+
+
 
 
 #footer_content{
@@ -453,19 +527,30 @@ footer{
 }
 
 
-#footer_contacts h3{
-    margin-bottom: 0.75rem;
+
+
+#footer_contacts img{
+    height:115px;
+    width: 115px;
 }
+
+
+
+
 
 
 #footer_social_media{
     display: flex;
-    gap: 2rem;
-    margin-top: 1.5rem;
+    gap: 1rem;
+
 }
+
+
 .fa-brandsfa-instagram{
     color: #2f2e2e;
 }
+
+
 
 
 #footer_social_media .footer-link{
@@ -484,9 +569,19 @@ footer{
 
 
 
+
+
+
+
+
+
 #footer_social_media .footer-link:hover{
     opacity: 0.8;
 }
+
+
+
+
 
 
 
@@ -496,9 +591,13 @@ footer{
 }
 
 
+
+
 #instagram{
     background: linear-gradient(#7f37c9,#ff2992,#ff9807);
 }
+
+
 
 
 #facebook{
@@ -506,9 +605,13 @@ footer{
 }
 
 
+
+
 #whatsapp{
     background-color: #25d366;
 }
+
+
 
 
 .footer-list{
@@ -519,15 +622,21 @@ footer{
 }
 
 
+
+
 .footer-list .footer-link{
     color: var(--color-neutral-40);
     transition: all 0.4s;
 }
 
 
+
+
 .footer-list .footer-link:hover{
     color: #7f37c9;
 }
+
+
 
 
 #footer_subscribe{
@@ -537,9 +646,13 @@ footer{
 }
 
 
+
+
 #footer_subscribe p{
     color: var(--color-neutral-40);
 }
+
+
 
 
 #input_group{
@@ -550,11 +663,15 @@ footer{
 }
 
 
+
+
 #input_group input{
     all: unset;
     padding: .45rem;
     width: 100%;
 }
+
+
 
 
 #input_group button{
@@ -572,9 +689,15 @@ footer{
 
 
 
+
+
+
+
 #input_group button:hover{
     opacity: 0.8;
 }
+
+
 
 
 #footer_copyright{
@@ -587,12 +710,16 @@ footer{
 }
 
 
+
+
 @media screen and (max-width:768px){
     #footer_content{
         grid-template-columns: repeat(2,1fr);
         gap: 2rem;
     }
 }
+
+
 
 
 @media screen and (max-width:426px){
@@ -603,8 +730,11 @@ footer{
 }
 
 
+
+
 /* --------------------------------------Cadastro Pet --------------------------------------*/
 /* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+
 
 body{
     font-family: 'Montserrat', sans-serif;
@@ -615,6 +745,7 @@ body{
 }
 */
 
+
 .formPage{
     display: flex;
     flex-direction: column;
@@ -623,12 +754,17 @@ body{
     justify-content:center;
     background-color: blanchedalmond;
 
+
 }
+
 
 input{
     border-radius: 20px;
 
+
 }
+
+
 
 
 /* Tela adotados/encontrados */
@@ -638,32 +774,40 @@ input{
     box-sizing: border-box;
     font-family: 'Quicksand', sans-serif;
 
+
 }
+
 
 body {
     background: #FAE8E8;
     height: 100vh;
     width: 100%;
 
+
     display: flex;
     justify-content: center;
     align-items: center;
 
+
     color: #000000;
+
 
     font-size: 20px;
 }
 */
+
 
 main{
     background: #F9E48D;
     border-radius: 25px 25px 25px 25px;
 }
 
+
 main.cards {
     display: flex;
     padding: 32px;
 }
+
 
 main.cards section.card {
     display: flex;
@@ -677,25 +821,30 @@ main.cards section.card {
     margin-left: 32px;
 }
 
+
 main.cards section.card:first-child {
     margin-left: 0;
 }
+
 
 main.cards section.card .icon {
     width: 100%;
     height: 100%;
 }
 
+
 main.cards section.card img {
     width: 300px;
     height: 300px;
 }
+
 
 main.cards section.card h2 {
     font-size: 100%;
     margin: 16px 0;
     color: #2f2e2e;
 }
+
 
 main.cards section.card span {
     font-weight: 300;
@@ -704,6 +853,7 @@ main.cards section.card span {
     margin-bottom: 16px;
     color: #2f2e2e;
 }
+
 
 main.cards section.card button {
     padding: 0.5rem 1rem;
@@ -717,10 +867,13 @@ main.cards section.card button {
     margin-bottom: 16px 0;
 }
 
+
 #button1{
     font-size: 13px;
     transition: 0.2s;
 }
+
+
 
 
 #button2{
@@ -728,7 +881,9 @@ main.cards section.card button {
     transition: 0.2s;
 }
 
+
 button:hover{
+
 
     transform: translateY(-10%);
     transition: 0.2s;
@@ -743,6 +898,7 @@ main.cards section.card.about button {
     background: linear-gradient(to right, #756197, #756197);
     }
 
+
 main.cards section.card.contact {
     box-shadow: 20px 20px 50px -30px  #a74a25;
     }
@@ -753,27 +909,34 @@ main.cards section.card.about {
     box-shadow: 20px 20px 50px -30px  #a74a25;
     }
 
+
 @media screen and (max-width: 720px) {
     main.cards {
         flex-direction: column;
     }
+
 
     main.cards section.card {
         margin-left: 0;
         margin-bottom: 32px;
     }
 
+
     main.cards section.card:last-child {
         margin-bottom: 0;
     }
+
 
     main.cards section.card button {
         font-size: 70%;
     }
 
+
 }
 
+
 /*Cadastro e login de usuarios */
+
 
 .page{
     display: flex;
@@ -784,7 +947,9 @@ main.cards section.card.about {
     width: 100%;
     height: 100vh;
 
+
 }
+
 
 /* Login */
 .formLogin{
@@ -797,6 +962,7 @@ main.cards section.card.about {
     gap: 0.5px;
 }
 
+
 .formLogin h1{
     padding: 0;
     margin: 0;
@@ -807,6 +973,7 @@ main.cards section.card.about {
     text-align: center;
 }
 
+
 .formLogin p {
     display: inline-block;
     font-size: 14px;
@@ -815,6 +982,7 @@ main.cards section.card.about {
     margin-bottom: 25px;
     text-align: center;
 }
+
 
 .formLogin input {
     padding: 15px;
@@ -828,14 +996,18 @@ main.cards section.card.about {
 }
 
 
+
+
 .formLogin input:focus {
     border: 1px solid #aac2fd;
 }
+
 
 .formLogin label {
     font-size: 15px;
     font-weight: 600;
 }
+
 
 .formLogin a {
     display: inline-block;
@@ -845,9 +1017,11 @@ main.cards section.card.about {
     transition: all linear 160ms;
 }
 
+
 .formLogin a:hover {
     color: #e6edff;
 }
+
 
 a{
     text-align: center;
@@ -863,13 +1037,17 @@ a{
     cursor: pointer;
     margin: 0 !important;
 
+
 }
+
 
 .btn:hover {
     transform: scale(1.05);
     background-color: #aac2fd;
 
+
 }
+
 
 /* Redes sociais */
 #social_media {
@@ -877,10 +1055,15 @@ a{
     justify-content: space-evenly;
 }
 
+
 #social_media img {
     width: 40px;
 }
 
+
 #social_media img:hover {
     transform: scale(1.2);
 }
+
+
+

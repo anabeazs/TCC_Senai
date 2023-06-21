@@ -11,7 +11,6 @@ def home():
 @app.route('/cadastrar-pet', methods=['POST','GET'])
 @login_required
 def cadPet():
-
     form = FormCadastrarPet()
     if form.validate_on_submit():
         print( form.nome.data)
@@ -22,10 +21,6 @@ def cadPet():
         db.session.commit()
         return redirect('encontrados')
     return render_template('cadPet.html', form=form)
-
-@app.route('/encontrados')
-def encontrados():
-    return render_template('pag.html')
 
 @app.route('/cadastrar-usuario', methods=['POST','GET'])
 def cadastrar_usuario():
@@ -56,7 +51,18 @@ def login():
             flash(f'Usuário ou senha inválidos', 'alert alert-danger')
     return render_template('login.html', form = form)
 
+@app.route('/disponiveis')
+def disponiveis():
+    adocao = Animais.query.filter_by(classificacao='adoção').first()
+    return render_template('Disponiveis.html', adocao=adocao)
+
 @app.route('/adotados')
 def adotados():
     animais = Animais.query.all()
     return render_template('Adotados.html', animais=animais)
+
+@app.route('/encontrados')
+def encontrados():
+    return render_template('pag.html')
+
+

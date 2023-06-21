@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% block body %}
+        <div class="container">
+            <div class="page-header">
+                <h3 class="box-title col-md-12 ">Produtos</h3>
+            </div>
+            <form method="GET" action="">
+                <table class="table table-borderless table-hover" style="background-color:#3d8fb3">
+                  <thead>
+                    <tr>
+                      <th>ID</th>
+                      <th>Nome</th>
+                      <th>Tipo</th>
+                      <th>Preço</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {% for item in produtos %}
+                        <tr>
+                            <td>{{ item.id }}</td>
+                            <td>{{ item.nome }}</td>
+                            <td>{{ item.tipo }}</td>
+                            <td>{{ item.preco }}</td>
+                        </tr>
+                    {% endfor %}
+                  </tbody>
+                </table>
+            </form>
+        </div>
+{% endblock %}
